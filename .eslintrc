@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": ["airbnb-typescript"],
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    // Disable <Fragment> => <> replacement. Feel free to change
+    "react/jsx-fragments": "off",
+    // Disable prefer default export
+    "import/prefer-default-export": "off"
+  }
+}
